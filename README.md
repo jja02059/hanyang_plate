@@ -60,10 +60,13 @@ urlpatterns = [
 ```  
 
 ```
+hanyang_plate
 posts
 |--templates
 |--|--posts
 |--|--|--home.html
+manage.py
+README.md
 
 <h1>홈입니다</h1>
 

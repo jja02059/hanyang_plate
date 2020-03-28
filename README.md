@@ -17,3 +17,14 @@
 - 서버 실행하기: `python3 manage.py runserver`
 
 
+## 어플리케이션 만들기
+- 어플리케이션 만들기: `django-admin startapp [어플리케이션 이름]`
+*보통 어플리케이션 이름은 복수형 명사, 스네이크 케이스로 정합니다*
+
+- [프로젝트 이름]/urls.py 고치기
+
+- [어플리케이션 이름]/urls.py 생성하기
+
+- [프로젝트 이름]/settings.INSTALLED_APPS 에 [어플리케이션 이름] 추가
+
+- [프로젝트 이름]/settings 의 template dir 에 [os.path.join(BASE_DIR, "templates")] 추가

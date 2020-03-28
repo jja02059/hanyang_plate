@@ -59,14 +59,17 @@ urlpatterns = [
 
 ```  
 
-```
-hanyang_plate
+``` html
+<!-- hanyang_plate
 posts
 |--templates
 |--|--posts
 |--|--|--home.html
 manage.py
 README.md
+ -->
+
+<!-- posts/templates/posts/home.html -->
 
 <h1>홈입니다</h1>
 

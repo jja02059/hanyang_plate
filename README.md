@@ -27,8 +27,50 @@
 - [어플리케이션 이름]/urls.py 생성하기
 
 - [프로젝트 이름]/settings.INSTALLED_APPS 에 [어플리케이션 이름] 추가
+```python 
+hanyang_plate/settings.py
+
+...
+
+INSTALLED_APP = [
+  ...
+  ...
+  ...
+  'posts'
+]
+
+...
+
+```  
 
 - [프로젝트 이름]/settings 의 template dir 에 [os.path.join(BASE_DIR, "templates")] 추가
+```python 
+hanyang_plate/settings.py
+
+...
+
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+...
+
+```  
+
+
 
 ```python
 # hanyang_plate/urls.py

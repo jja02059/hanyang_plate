@@ -31,6 +31,17 @@
 - [프로젝트 이름]/settings 의 template dir 에 [os.path.join(BASE_DIR, "templates")] 추가
 
 ```python
+# hanyang_plate/urls.py
+
+from django.urls import path, include
+
+urlpatterns = [
+  path("", include("posts.urls")),
+]
+
+```  
+
+```python
 # posts/views.py
 
 def home(requests):
@@ -40,9 +51,20 @@ def home(requests):
 
 ```python
 # posts/urls.py
+from posts import views
 
 urlpatterns = [
-  path()
+  path("", views.home)
 ]
+
+```  
+
+```
+posts
+|--templates
+|--|--posts
+|--|--|--home.html
+
+<h1>홈입니다</h1>
 
 ```  

@@ -9,4 +9,5 @@ def home(requests):
 
 def passView(requests):
     data = {"message":"장고를 잘하자"}
+    data.update({"important_message":"코로나 조심하세요"})
     return render(requests, "posts/pass.html", data)
